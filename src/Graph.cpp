@@ -16,8 +16,10 @@ Graph::Graph(std::vector<std::vector<int>> matrix):edges( matrix){//matrix on th
 
 Graph::Graph():edges(std::vector<std::vector<int>>()) {}
 
-std::vector<int> Graph::getNeighbor(int vertices) {
-    return edges[vertices];
+std::vector<int> *Graph::getNeighbor(int vertices)const {
+    vector <int> *b ;
+    *b =edges[vertices];
+    return b;
 }
 
 

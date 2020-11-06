@@ -15,16 +15,17 @@ enum TreeType{
 
 class Session{
 public:
-    Session(const std::string& path):g();
+    Session(const std::string& path):g(){};
     
     void simulate();
     void addAgent(const Agent& agent);
     void setGraph(const Graph& graph);
+    Graph getGraph()const;
     
     void enqueueInfected(int);
     int dequeueInfected();
     TreeType getTreeType() const;
-    
+
 private:
     Graph g;
     TreeType treeType;
