@@ -9,7 +9,8 @@ public:
     Graph();
     void infectNode(int nodeInd);
     bool isInfected(int nodeInd);
-    std::vector<int> *getNeighbor(int vertices) const;
+     std::vector<int> getNeighbor(int vertices) ;
+     int getSize();
 private:
     std::vector<std::vector<int>> edges;
     std::vector<int> *trafficLight;

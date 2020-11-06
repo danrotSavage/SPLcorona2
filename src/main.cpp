@@ -37,8 +37,10 @@ int main(int argc, char** argv){
      std::cout << g->isInfected(3) << std::endl;
      std::cout <<g->isInfected(4)<< std::endl;
 
-     Tree::createTree(m,2);
-
+     vector <int> neighbor;
+     neighbor=g->getNeighbor(5);
+     Tree *AbrahamTheRoot=Tree::createTree(m,5);
+      std::cout <<" im here " << std::endl;
 
   //  std::cout << j["graph"].size() << std::endl;
    /*for( auto elem:j["graph"])
