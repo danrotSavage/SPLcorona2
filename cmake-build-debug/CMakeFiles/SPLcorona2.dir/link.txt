@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/SPLcorona2.dir/src/main.cpp.o CMakeFiles/SPLcorona2.dir/src/Graph.cpp.o  -o SPLcorona2 
