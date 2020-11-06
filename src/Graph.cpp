@@ -31,5 +31,5 @@ void Graph::infectNode(int nodeInd) {
 }
 bool Graph::isInfected(int nodeInd) {
 
-    return (*trafficLight)[nodeInd]==2;
+    return (*trafficLight)[nodeInd]==1;
 }

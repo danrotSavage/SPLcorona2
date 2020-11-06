@@ -23,11 +23,8 @@ std::vector<int> Tree::getReleventChildren(std::vector<int> &GraphNeighbor)
 
     return *output;
 }
-/*
+
 Tree * Tree::createTree(const Session &session, int rootLabel) {
-
-
-
     queue<Tree*> *treeQueue = new queue<Tree*>();
     //push root into queue
     treeQueue->push(new Tree(rootLabel));
@@ -53,6 +50,12 @@ Tree * Tree::createTree(const Session &session, int rootLabel) {
     }
 
 }
-*/
+
+//check later
+void Tree::addChild(const Tree &child) {
+
+    Tree* temp = new Tree (child.node);
+    (children)->push_back(temp);
+}
 
 
