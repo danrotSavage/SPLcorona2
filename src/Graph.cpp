@@ -16,8 +16,14 @@ Graph::Graph(std::vector<std::vector<int>> matrix):edges( matrix){//matrix on th
 
 Graph::Graph():edges(std::vector<std::vector<int>>()) {}
 
-std::vector<int> Graph::getNeighbor(int vertices) {
+ std::vector<int> Graph::getNeighbor(int vertices) {
+    vector <int> *b ;
+
     return edges[vertices];
+}
+int Graph::getSize() {
+
+    return edges.size();
 }
 
 
@@ -29,5 +35,5 @@ void Graph::infectNode(int nodeInd) {
 }
 bool Graph::isInfected(int nodeInd) {
 
-    return (*trafficLight)[nodeInd]==2;
+    return (*trafficLight)[nodeInd]==1;
 }
